@@ -1,7 +1,7 @@
 import { IconButton, Box, AppBar, useMediaQuery, Toolbar, styled, Stack } from '@mui/material';
 
 import { useSelector, useDispatch } from 'src/store/Store';
-import { toggleMobileSidebar } from 'src/store/customizer/CustomizerSlice';
+import { toggleMobileSidebar, toggleSidebar } from 'src/store/customizer/CustomizerSlice';
 import { IconMenu2 } from '@tabler/icons-react';
 import Notifications from './Notification';
 import Profile from './Profile';
@@ -40,7 +40,7 @@ const Header = () => {
         <IconButton
           color="inherit"
           aria-label="menu"
-          onClick={lgUp ? () => {} : () => dispatch(toggleMobileSidebar())}
+          onClick={lgUp ? () => dispatch(toggleSidebar()) : () => dispatch(toggleMobileSidebar())}
         >
           <IconMenu2 size="20" />
         </IconButton>

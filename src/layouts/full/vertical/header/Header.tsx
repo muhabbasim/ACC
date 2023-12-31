@@ -35,7 +35,11 @@ const Header = () => {
 
   return (
     <AppBarStyled position="sticky" color="default">
-      <ToolbarStyled>
+      <ToolbarStyled
+        sx={{
+          // boxShadow: 1
+        }}
+      >
 
         <IconButton
           color="inherit"

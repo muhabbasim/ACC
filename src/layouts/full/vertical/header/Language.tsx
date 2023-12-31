@@ -3,7 +3,7 @@
 import React from 'react';
 import { Avatar, IconButton, Menu, MenuItem, Typography, Stack } from '@mui/material';
 import { useSelector, useDispatch } from 'src/store/Store';
-import { setLanguage } from 'src/store/customizer/CustomizerSlice';
+import { setDir, setLanguage } from 'src/store/customizer/CustomizerSlice';
 import FlagEn from 'src/assets/images/flag/icon-flag-en.svg';
 import FlagSa from 'src/assets/images/flag/icon-flag-sa.svg';
 import { useTranslation } from 'react-i18next';
@@ -37,6 +37,17 @@ const Language = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const handleChageLanguage = ( value:string ) => {
+    dispatch(setLanguage(value))
+    if ( value === 'ar' ) {
+      dispatch(setDir('rtl'))
+    } else if ( value === 'en' ) {
+      dispatch(setDir('ltr'))
+    }
+
+  }
+
   useEffect(() => {
     i18n.changeLanguage(customizer.isLanguage);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -69,7 +80,7 @@ const Language = () => {
           <MenuItem
             key={index}
             sx={{ py: 2, px: 3 }}
-            onClick={() => dispatch(setLanguage(option.value))}
+            onClick={() => handleChageLanguage(option.value)}
           >
             <Stack direction="row" spacing={1} alignItems="center">
               <Avatar src={option.icon} alt={option.icon} sx={{ width: 20, height: 20 }} />

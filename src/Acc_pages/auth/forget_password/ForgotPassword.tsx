@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from 'react';
-import { Grid, Box, Card, Typography, Divider } from '@mui/material';
+import { Grid, Box, Card, Typography } from '@mui/material';
 
 import Logo from 'src/layouts/full/shared/logo/Logo';
 import PageContainer from 'src/components/container/PageContainer';

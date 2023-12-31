@@ -21,7 +21,7 @@ import {
   TableContainer,
 } from '@mui/material';
 import { SearchTicket, fetchTicket, fetchTickets } from 'src/store/apps/tickets/TicketSlice';
-import { IconEye, IconTrash } from '@tabler/icons-react';
+import { IconEye } from '@tabler/icons-react';
 import { TicketType } from 'src/types/apps/ticket';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'src/store/Store';

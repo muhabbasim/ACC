@@ -15,17 +15,17 @@ interface MenuitemsType {
   external?: boolean;
 }
 import {
-  IconPoint,
-  IconNotes,
-  IconCalendar,
-  IconMail,
-  IconTicket,
+  // IconPoint,
+  // IconNotes,
+  // IconCalendar,
+  // IconMail,
+  // IconTicket,
   IconUserCircle,
   IconPackage,
-  IconMessage2,
-  IconBasket,
-  IconChartDonut3,
-  IconShoppingCart,
+  // IconMessage2,
+  // IconBasket,
+  // IconChartDonut3,
+  // IconShoppingCart,
   IconAperture,
 } from '@tabler/icons-react';
 

@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from 'react';
-import { CardContent, Grid, Typography, MenuItem } from '@mui/material';
+import { CardContent, Grid, MenuItem } from '@mui/material';
 
 // components
 import BlankCard from '../../shared/BlankCard';

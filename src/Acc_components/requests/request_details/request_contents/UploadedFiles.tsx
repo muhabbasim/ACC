@@ -5,7 +5,6 @@ import { useTheme } from '@mui/material/styles';
 import { Stack, Typography, Avatar, Box } from '@mui/material';
 import { IconDatabase, IconMail, IconMapPin, IconPhone, IconScreenShare } from '@tabler/icons-react';
 import DashboardCard from 'src/components/shared/DashboardCard';
-import { Download } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 
 const UploadedFiles = () => {

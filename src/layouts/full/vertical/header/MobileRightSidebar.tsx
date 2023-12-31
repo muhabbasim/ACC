@@ -3,12 +3,9 @@
 import React, { useState } from 'react';
 import {
   IconApps,
-  IconCalendarEvent,
   IconChevronDown,
   IconChevronUp,
   IconGridDots,
-  IconMail,
-  IconMessages,
 } from '@tabler/icons-react';
 import {
   Box,

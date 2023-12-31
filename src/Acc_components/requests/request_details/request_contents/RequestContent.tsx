@@ -23,6 +23,8 @@ type UserProps = {
 }
 
 const RequestContent = ({ user }: UserProps) => {
+  console.log(user);
+  
   return (
     <PageContainer title="Request details" description="this is User Profile page">
       <Grid container spacing={3}>

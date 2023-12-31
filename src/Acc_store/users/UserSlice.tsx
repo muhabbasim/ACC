@@ -1,9 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 import { AppDispatch } from '../Store';
 import UsersData from 'src/Acc_apis/users/UserData';
 
-const API_URL = '/api/users/data/';
+// const API_URL = '/api/users/data/';
 
 interface StateType {
   users: any[];
